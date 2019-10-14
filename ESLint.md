@@ -16,52 +16,16 @@ ESLint에 대한 설명이나 상세한 내용은 기술하지 않는다.
 
 
 1. Visual Studio Code의 Extensions에서 ESLint를 설치한다.
-![image](https://user-images.githubusercontent.com/28284285/66732360-9a22fc80-ee96-11e9-9e03-e9080568e0aa.png)
-
+![image](https://user-images.githubusercontent.com/28284285/66732360-9a22fc80-ee96-11e9-9e03-e9080568e0aa.png)    
 
 2. node가 설치 되었다는 가정하에 "npm install eslint" (global 설치시 "npm install -g eslint")
 3. npm init           => package.json 생성됨
 4. eslint --init      => .eslintrc.js 생성됨
 5. Visual Studio Code의 기본설정(ctrl+,)이나 setting.json에서 설정을 추가한다.
-
-{
-    "eslint.enable": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "html"                // autofix를 사용할땐 {"language": "html", "autoFix": true}
-    ],
-    "eslint.alwaysShowStatus": true,
-}
+![image](https://user-images.githubusercontent.com/28284285/66732545-5e3c6700-ee97-11e9-8781-f2d46aadd91f.png)    
 
 6. .eslintrc.js에서 rules에 설정추가
+![image](https://user-images.githubusercontent.com/28284285/66732681-d4d96480-ee97-11e9-8e96-1c43c6bbc7a2.png)    
 
-module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  extends: [
-    'eslint:recommended',     // standard, air-bnb, google 등의 코드 컨벤션 설정
-  ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {
-   // 문법체크 설정 => 체크안함 : "off" 또는 0
-   //                 경고만   : "warn" 또는 1
-   //                 에러     : "error" 또는 2
-   // 규칙 참고 => https://eslint.org/docs/rules/ 
-                      
-    "no-unused-vars": "error",
-    "no-use-before-define": "warn",
-    "no-redeclare": "warn",
-    "no-console":"warn",
-  },
-};
+규칙 참고 => https://eslint.org/docs/rules/ 
 
