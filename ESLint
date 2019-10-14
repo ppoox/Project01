@@ -16,6 +16,9 @@ ESLint에 대한 설명이나 상세한 내용은 기술하지 않는다.
 
 
 1. Visual Studio Code의 Extensions에서 ESLint를 설치한다.
+![image](https://user-images.githubusercontent.com/28284285/66732360-9a22fc80-ee96-11e9-9e03-e9080568e0aa.png)
+
+
 2. node가 설치 되었다는 가정하에 "npm install eslint" (global 설치시 "npm install -g eslint")
 3. npm init           => package.json 생성됨
 4. eslint --init      => .eslintrc.js 생성됨
