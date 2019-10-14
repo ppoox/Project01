@@ -1,0 +1,64 @@
+Spring Tool Suite를 사용하여 프로젝트를 진행하면서
+javascript의 오타, 필요없는 선언 및 정의 하지 않아서 나는 에러들을 경험하였다.
+이 문서는 앞으로 진행할 프로젝트에서 사용할 ESLint 세팅을 위함이지 
+ESLint에 대한 설명이나 상세한 내용은 기술하지 않는다.
+
+필자가 시도한 ESLint 설정 방법으로는 아래 세가지이다.
+1. Visual Studio Code 이용
+2. Eclipse IDE를 Tern IDE로 configuration하여 이용
+3. IntelliJ 이용
+
+위 방법들중 2번 방법이 사용하기에는 편해보였지만 생각보다 불편하고 
+진행중인 프로젝트 설정을 바꾸는게 마음에 들지않았다.
+
+그래서 가벼우면서 javascript의 문법체크만을 위한 목적에 맞춰
+1번 방법을 사용하기로 정하고 간단하게 설정방법과 필요 설정들을 기술한다.
+
+
+1. Visual Studio Code의 Extensions에서 ESLint를 설치한다.
+2. node가 설치 되었다는 가정하에 "npm install eslint" (global 설치시 "npm install -g eslint")
+3. npm init           => package.json 생성됨
+4. eslint --init      => .eslintrc.js 생성됨
+5. Visual Studio Code의 기본설정(ctrl+,)이나 setting.json에서 설정을 추가한다.
+
+{
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html"                // autofix를 사용할땐 {"language": "html", "autoFix": true}
+    ],
+    "eslint.alwaysShowStatus": true,
+}
+
+6. .eslintrc.js에서 rules에 설정추가
+
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+  },
+  extends: [
+    'eslint:recommended',     // standard, air-bnb, google 등의 코드 컨벤션 설정
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+   // 문법체크 설정 => 체크안함 : "off" 또는 0
+   //                 경고만   : "warn" 또는 1
+   //                 에러     : "error" 또는 2
+   // 규칙 참고 => https://eslint.org/docs/rules/ 
+                      
+    "no-unused-vars": "error",
+    "no-use-before-define": "warn",
+    "no-redeclare": "warn",
+    "no-console":"warn",
+  },
+};
+
