@@ -26,7 +26,8 @@ ESLint에 대한 설명이나 상세한 내용은 기술하지 않는다.
 
 6. .eslintrc.js에서 rules에 설정추가       
 
-![image](https://user-images.githubusercontent.com/28284285/66732681-d4d96480-ee97-11e9-8e96-1c43c6bbc7a2.png)    
+![image](https://user-images.githubusercontent.com/28284285/66732911-b58f0700-ee98-11e9-9438-d7d5234baa52.png)    
+
 
 규칙 참고 => https://eslint.org/docs/rules/ 
 
