@@ -24,7 +24,8 @@ ESLint에 대한 설명이나 상세한 내용은 기술하지 않는다.
 5. Visual Studio Code의 기본설정(ctrl+,)이나 setting.json에서 설정을 추가한다.
 ![image](https://user-images.githubusercontent.com/28284285/66732545-5e3c6700-ee97-11e9-8781-f2d46aadd91f.png)    
 
-6. .eslintrc.js에서 rules에 설정추가
+6. .eslintrc.js에서 rules에 설정추가       
+
 ![image](https://user-images.githubusercontent.com/28284285/66732681-d4d96480-ee97-11e9-8e96-1c43c6bbc7a2.png)    
 
 규칙 참고 => https://eslint.org/docs/rules/ 
