@@ -20,12 +20,13 @@ VS Code에 Spring Boot 설정
 > VS Code에서는 Plugin 같은 것들을 Extension이라고 한다.  
 > VS Code를 키고 아래 사진 파란색 V표시를 누르면 Extensions를 설치하는 사이드 메뉴가 나온다.  
 > 검색어에   
-> **1. Spring Boot Extension Pack  
+> **필수항목    
+>   1. Spring Boot Extension Pack  
 >   2. Spring Boot Tools   
 >   3. Spring Initializr Java Support   
 >   4. Spring Boot Dashboard   
 >   5. Java Server Pages(JSP)   
->  이하 선택   
+>  ##### 이하 선택항목     
 >  6. Lombok Annotations Support for VS Code (Lombok 사용시 필수)   
 >  7. ESLint   
 >  8. Visual Studio IntelliCode**       
