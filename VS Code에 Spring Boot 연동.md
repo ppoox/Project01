@@ -33,10 +33,10 @@ VS Code에 Spring Boot 설정
 
 <hr/>
 
-설치를 하고 난 다음 File에서 해당 Workspace를 열면  
-해당 VS Code의 settings에 따라 문제에 다양한 경고 및 에러가 나오게 된다.    
-해당 VS Code에서 Server를 구동시킬 수 있지만 Server는 STS에서 키고 작업하기 바란다.  
-같은 Workspace를 바라 보고 있기 때문에 VS Code에서 코드를 작성해도 
+설치를 하고 난 다음 File에서 해당 Workspace를 열면   
+해당 VS Code의 settings에 따라 문제에 다양한 경고 및 에러가 나오게 된다.     
+해당 VS Code에서 Server를 구동시킬 수 있지만 Server는 STS에서 키고 작업하기 바란다.   
+같은 Workspace를 바라 보고 있기 때문에 VS Code에서 코드를 작성해도  
 별다른 작업없이 바로 열려져 있는 STS의 파일들이 바로 수정된다.   
-script 수정이기 때문에 Ctrl + Shift + R을 눌러주면 
-VS Code에서 작성한 내용이 STS에서 구동중인 웹페이지에도 적용이 된다.   
+script 수정이기 때문에 Ctrl + Shift + R을 눌러주면   
+VS Code에서 작성한 내용이 STS에서 구동중인 웹페이지에도 적용이 된다.    
