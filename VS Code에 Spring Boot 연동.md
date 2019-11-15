@@ -15,21 +15,21 @@ VS Code에 Spring Boot 설정
 > JAVA나 Query 그리고 서버구동 및 테스트는 STS에서 하면서 개발하기 위함이다.   
 > **이에따라 script의 자동완성 기능과 추가적으로 ESLint 환경을 구성하여 문법 및 오탈자를 줄이기 위함이다.**  
 
-
-VS Code에서는 Plugin 같은 것들을 Extension이라고 한다.  
-VS Code를 키고 아래 사진 파란색 V표시를 누르면 Extensions를 설치하는 사이드 메뉴가 나온다.  
-검색어에   
-> **1. Spring Boot Extension Pack
->   2. Spring Boot Tools
->   3. Spring Initializr Java Support
->   4. Spring Boot Dashboard
->   5. Java Server Pages(JSP)
->  이하 선택
->  6. Lombok Annotations Support for VS Code (Lombok 사용시 필수)
->  7. ESLint
->  8. Visual Studio IntelliCode**  
-위의 5가지 항목을 검색하여 설치하면 각각의 종속성 또는 확장팩에 들어이는 하위의 Extensions들도 같이 설치 된다.  
-(종속성을 가지고 있기 때문에 상위 Extension을 제거하기 전에는 하위 Extension은 삭제가 안된다.  
+### 설치항목
+> VS Code에서는 Plugin 같은 것들을 Extension이라고 한다.  
+> VS Code를 키고 아래 사진 파란색 V표시를 누르면 Extensions를 설치하는 사이드 메뉴가 나온다.  
+> 검색어에   
+> **1. Spring Boot Extension Pack  
+>   2. Spring Boot Tools   
+>   3. Spring Initializr Java Support   
+>   4. Spring Boot Dashboard   
+>   5. Java Server Pages(JSP)   
+>  이하 선택   
+>  6. Lombok Annotations Support for VS Code (Lombok 사용시 필수)   
+>  7. ESLint   
+>  8. Visual Studio IntelliCode**       
+> 위의 5가지 항목을 검색하여 설치하면 각각의 종속성 또는 확장팩에 들어이는 하위의 Extensions들도 같이 설치 된다.  
+> (종속성을 가지고 있기 때문에 상위 Extension을 제거하기 전에는 하위 Extension은 삭제가 안된다.  
 
 <hr/>
 
