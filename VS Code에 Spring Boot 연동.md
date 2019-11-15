@@ -13,7 +13,8 @@ VS Code에 Spring Boot 설정
 > 이번에는 VS Code에 Spring boot를 연동해서   
 > 같은 Workspace를 바라보게 하여 VS Code에서는 .jsp 또는 .js 파일들을 작성 및 수정하고  
 > JAVA나 Query 그리고 서버구동 및 테스트는 STS에서 하면서 개발하기 위함이다.   
-> **이에따라 script의 자동완성 기능과 추가적으로 ESLint 환경을 구성하여 문법 및 오탈자를 줄이기 위함이다.**  
+> **이에따라 script의 자동완성 기능과 추가적으로 ESLint 환경을 구성하여   
+문법 및 오탈자, 미사용 코드, 주석, 작성해논 TODO  줄이기 위함이다.**  
 
 ### 설치항목
 > VS Code에서는 Plugin 같은 것들을 Extension이라고 한다.  
