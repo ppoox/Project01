@@ -25,13 +25,9 @@ sudo ufw allow 80/tcp			=> 방화벽 등록
 9. apach2 추가 보안설정  
 
 sudo nano /etc/apache2/apache2.conf  
-========================================  
+   
 AccessFileName .htaccess  
- 
-#
-#
-#
-#
+
 
 <FileMatch "^\.ht">  
 	Requrie all denied  
@@ -59,18 +55,15 @@ AccessFileName .htaccess
     Require all granted
 </DirectoryMatch>
 ```
-==============================================
+
 
 
 10. sudo nano /etc/apache2/conf-available/charset.conf
-==============================================
 
 'AddDefaultCharset UTF-8' 			=> 주석해제
-==============================================
-
 
 11. sudo nano /etc/apache2/conf-available/security.conf
-==============================================
+
 
 ' <Directory />
 	AllowOverride None
@@ -82,16 +75,12 @@ AccessFileName .htaccess
 'Header set X-Content-Type-Options: "nosniff"',
 'Header set X-Frame-Options: "sameorgin"'	=> 주석해제
 
-===============================================
 
 12. sudo service apache2 reload			=> apache 재시작
 
 13. sudo nano /etc/apache2/sites-available/000-default.conf
-===============================================
-
 JkMount /* loadbalancer				=> 톰캣으로 넘겨줄 파일 설정
 
-===============================================
 
 * 추후 추가할 것 => SSL 인증서 적용, SSH 기본포트번호 변경, 방화벽 설정, 트랙픽 양 제한
 
