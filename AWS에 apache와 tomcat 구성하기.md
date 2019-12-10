@@ -25,7 +25,7 @@ sudo ufw allow 80/tcp			=> 방화벽 등록
 9. apach2 추가 보안설정  
 
 > sudo nano /etc/apache2/apache2.conf  
-   
+>
 >> AccessFileName .htaccess  
 >> 
 >> <FileMatch "^\.ht">  
