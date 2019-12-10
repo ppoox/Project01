@@ -3,7 +3,8 @@
 apache 설정   
 * 참고 : https://blog.lael.be/post/73   
 
-1. sudo apt-get update			=> app store update   
+1. app store update   
+``` sudo apt-get update ```
 
 2. sudo dpkg-reconfigure tzdata		=> Asia / Seoul   
 
