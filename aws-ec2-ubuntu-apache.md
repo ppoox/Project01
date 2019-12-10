@@ -1,7 +1,4 @@
-### AWS EC2 Ubuntu 18.04 이용
-
-apache 설정    
-* 참고 : https://blog.lael.be/post/73    
+### AWS EC2 Ubuntu 18.04 환경에서 apache를 구성한다.
 
 1. 배포판 app store를 update 해준다.   
 ``` => sudo apt-get update ```    
@@ -71,13 +68,12 @@ apache 설정
 
 12. security.conf 추가 보안설정    
 > ``` => sudo nano /etc/apache2/conf-available/security.conf ```   
-> 아래의 코드 수정 또는 주석해제
+> 아래의 코드들 찾아서 작성, 수정 또는 주석해제
 >
 >> <Directory />
 >> 	  AllowOverride None
 >> 	  Require all denied
 >> </Directory>
->
 >
 >> ServerTokens Prod
 >
@@ -91,7 +87,9 @@ apache 설정
 >
 
 13. apache 재시작   
-``` => sudo service apache2 reload ```   
+``` => sudo service apache2 reload ``` 
+
+* **여기까지 참고 : https://blog.lael.be/post/73**     
 
 14. apache 서버의 sites 값 수정
 ``` => sudo nano /etc/apache2/sites-available/000-default.conf ```
