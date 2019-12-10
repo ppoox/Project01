@@ -38,6 +38,9 @@
 >> 
 >
 > 아래에 추가로 작성
+> **nano editor 사용법      
+>  작성완료시 ctrl + x 누른 후 Y(변경사항 저장) 또는 N(변경하지 않고 저장) 입력
+>   이후 파일명 수정여부 확인**
 >
 >> ```
 >> # deny file, folder start with dot
