@@ -26,7 +26,7 @@
 
 9. AWS apache WEB 보안그룹 인바운드 80포트 규칙추가
 
-10. apach2 추가 보안설정  
+10. apach2. 추가 보안설정  
 
 > => sudo nano /etc/apache2/apache2.conf  
 >
@@ -37,7 +37,7 @@
 >> </FileMatch>   
 >> 
 >
-> 하위에 추가
+> 아래에 추가로 작성
 >
 >> ```
 >> # deny file, folder start with dot
