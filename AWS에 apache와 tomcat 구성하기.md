@@ -24,37 +24,36 @@ sudo ufw allow 80/tcp			=> 방화벽 등록
 
 9. apach2 추가 보안설정  
 
-sudo nano /etc/apache2/apache2.conf  
+> sudo nano /etc/apache2/apache2.conf  
    
-AccessFileName .htaccess  
-
-
-<FileMatch "^\.ht">  
-	Requrie all denied  
-</FileMatch>   
-
-하위에 추가
-```
-# deny file, folder start with dot
-<DirectoryMatch "^\.|\/\.">
-    Require all denied
-</DirectoryMatch>
-  
-# deny (log file, binary, certificate, shell script, sql dump file) access.
-<FilesMatch "\.(?i:log|binary|pem|enc|crt|conf|cnf|sql|sh|key|yml|lock|gitignore)$">
-    Require all denied
-</FilesMatch>
-  
-# deny access.
-<FilesMatch "(?i:composer\.json|contributing\.md|license\.txt|readme\.rst|readme\.md|readme\.txt|copyright|artisan|gulpfile\.js|package\.json|phpunit\.xml|access_log|error_log|gruntfile\.js|bower\.json|changelog\.md|console|legalnotice|license|security\.md|privacy\.md)$">
-    Require all denied
-</FilesMatch>
- 
-# Allow Lets Encrypt Domain Validation Program
-<DirectoryMatch "\.well-known/acme-challenge/">
-    Require all granted
-</DirectoryMatch>
-```
+>> AccessFileName .htaccess  
+>> 
+>> <FileMatch "^\.ht">  
+>> 	Requrie all denied  
+>> </FileMatch>   
+>> 
+>> 하위에 추가
+>> ```
+>> # deny file, folder start with dot
+>> <DirectoryMatch "^\.|\/\.">
+>>     Require all denied
+>> </DirectoryMatch>
+>>   
+>> # deny (log file, binary, certificate, shell script, sql dump file) access.
+>> <FilesMatch "\.(?i:log|binary|pem|enc|crt|conf|cnf|sql|sh|key|yml|lock|gitignore)$">
+>>     Require all denied
+>> </FilesMatch>
+>>  
+>> # deny access.
+>> <FilesMatch "(?i:composer\.json|contributing\.md|license\.txt|readme\.rst|readme\.md|readme\.txt|copyright|artisan|gulpfile\.js|package\.json|phpunit\.xml|access_log|error_log|gruntfile\.js|bower\.json|changelog\.md|console|legalnotice|license|security\.md|privacy\.md)$">
+>>     Require all denied
+>> </FilesMatch>
+>>  
+>> # Allow Lets Encrypt Domain Validation Program
+>> <DirectoryMatch "\.well-known/acme-challenge/">
+>>     Require all granted
+>> </DirectoryMatch>
+>> ```
 
 
 
