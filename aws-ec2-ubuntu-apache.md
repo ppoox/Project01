@@ -12,17 +12,17 @@ apache 설정
 4. sudo apt-get install apache2		=> apache 설치(fedora, centos는 httpd)   
   
 5. sudo apache2 -v			=> version 확인   
-sudo ufw allow 80/tcp			=> 방화벽 등록   
 
-6. sudo service --status-all		=> service 실행중인지 여부확인   
+6. sudo ufw allow 80/tcp			=> 방화벽 등록   
 
-7. sudo netstat -atlpvn			=> port 확인  
+7. sudo service --status-all		=> service 실행중인지 여부확인   
 
-
-8. AWS 보안그룹 인바운드 80포트 규칙추가   
+8. sudo netstat -atlpvn			=> port 확인  
 
 
-9. apach2 추가 보안설정  
+9. AWS apache WEB 보안그룹 인바운드 80포트 규칙추가
+
+10. apach2 추가 보안설정  
 
 > sudo nano /etc/apache2/apache2.conf  
 >
@@ -55,32 +55,27 @@ sudo ufw allow 80/tcp			=> 방화벽 등록
 >> </DirectoryMatch>
 >> ```
 
+11. sudo nano /etc/apache2/conf-available/charset.conf
+> 'AddDefaultCharset UTF-8' 			=> 주석해제
+
+12. sudo nano /etc/apache2/conf-available/security.conf
+>
+> ' <Directory />
+> 	AllowOverride None
+> 	Require all denied
+>  </Directory> ',
+> 'ServerTokens Prod',
+> 'ServerSignature Off',
+> 'TraceEnable Off',
+> 'Header set X-Content-Type-Options: "nosniff"',
+> 'Header set X-Frame-Options: "sameorgin"'	=> 주석해제
+
+13. sudo service apache2 reload			=> apache 재시작
+
+14. sudo nano /etc/apache2/sites-available/000-default.conf
+> serverName '아이피주소 or 도메인'
+> JkMount /* loadbalancer				=> tomcat으로 넘겨줄 파일 설정(추후 ssl적용시 default-ssl로 이동)
 
 
-10. sudo nano /etc/apache2/conf-available/charset.conf
-
-'AddDefaultCharset UTF-8' 			=> 주석해제
-
-11. sudo nano /etc/apache2/conf-available/security.conf
-
-
-' <Directory />
-	AllowOverride None
-	Require all denied
- </Directory> ',
-'ServerTokens Prod',
-'ServerSignature Off',
-'TraceEnable Off',
-'Header set X-Content-Type-Options: "nosniff"',
-'Header set X-Frame-Options: "sameorgin"'	=> 주석해제
-
-
-12. sudo service apache2 reload			=> apache 재시작
-
-13. sudo nano /etc/apache2/sites-available/000-default.conf
-serverName '아이피주소 or 도메인'
-JkMount /* loadbalancer				=> tomcat으로 넘겨줄 파일 설정(추후 ssl적용시 default-ssl로 이동)
-
-
-* 추후 추가할 것 => SSL 인증서 적용, SSH 기본포트번호 변경, 방화벽 설정, 트랙픽 양 제한
+* 추후 추가 작성 할 것 => mod_jk를 이용한 tomcat 연동, SSL 인증서 적용, SSH 기본포트번호 변경, 방화벽 설정, 트랙픽 양 제한
 
