@@ -1,7 +1,7 @@
 ### AWS EC2 Ubuntu 18.04 환경에서 apache를 구성한다.
 
 1. 배포판 app store를 update 해준다.   
-``` => sudo apt-get update ```    
+```=> sudo apt-get update```    
 
 2. 리눅스 시간대 설정 Asia / Seoul 선택    
 ``` => sudo dpkg-reconfigure tzdata ```   
