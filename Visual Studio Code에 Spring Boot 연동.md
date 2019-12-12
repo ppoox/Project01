@@ -27,7 +27,7 @@ VS Code에 Spring Boot 설정
 >   **4. Spring Boot Dashboard**   
 >   **5. Java Server Pages(JSP)**   
 >  ##### 이하 선택항목   
->  **6. Lombok Annotations Support for VS Code (Lombok 사용시 필수)**
+>  **6. Lombok Annotations Support for VS Code (Lombok 사용시 필수)**      
 >  **7. ESLint**   
 >  **8. Visual Studio IntelliCode**       
 > 위의 5가지 항목을 검색하여 설치하면 각각의 종속성 또는 확장팩에 들어이는 하위의 Extensions들도 같이 설치 된다.  
