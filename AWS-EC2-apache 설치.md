@@ -1,34 +1,35 @@
 ## AWS EC2 Ubuntu 18.04 환경에서 apache를 구성한다.
 
-#### 1. 배포판 app store를 update 해준다.   
+#### 1. 배포판 pacakage store에서 update 목록을 확인한다.
 ```=> sudo apt-get update```    
 
-#### 2. 리눅스 시간대 설정 Asia / Seoul 선택    
+#### 2. package 최신화
+```=> sudo apt-get upgrade```    
+
+#### 3. 리눅스 시간대 설정 Asia / Seoul 선택    
 ``` => sudo dpkg-reconfigure tzdata ```   
 
-#### 3. 시간대 확인   
+#### 4. 시간대 확인   
 ``` => sudo date ```   
 
-#### 4. apache 설치(fedora와 centos는 apache2 대신 httpd)    
+#### 5. apache 설치(fedora와 centos는 apache2 대신 httpd)    
 ``` => sudo apt-get install apache2 ```   
   
-#### 5. version 확인    
+#### 6. version 확인    
 ``` => sudo apache2 -v ```   
 
-#### 6. 방화벽 80번 포트 허용   
+#### 7. 방화벽 80번 포트 허용  
+**AWS 사용자는 해당 인스턴스 보안 그룹에서 설정**
 ``` => sudo ufw allow 80/tcp ```     
 
-#### 7. 실행중인서비스확인     
+#### 8. 실행중인서비스확인     
 ``` => sudo service --status-all ```     
 
-#### 8. 열려있는 포트 확인    
+#### 9. 열려있는 포트 확인    
 ``` => sudo netstat -atlpvn ```
 
-#### 9. AWS apache WEB 보안그룹 인바운드 80포트 규칙추가
-
 #### 10. apach2. 추가 보안설정  
-
-> => sudo nano /etc/apache2/apache2.conf  
+``` => sudo nano /etc/apache2/apache2.conf ```     
 >
 >> AccessFileName .htaccess  
 >> 
