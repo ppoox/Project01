@@ -37,4 +37,4 @@
 
 **AWS EC2 INSTANCE에서는 보안상 root에 암호를 사용하지 않기권장하기 때문에 권한만 빌려 사용하시거나     
 임시 root 비밀번호 발급받아 사용하셔야 합니다.    
-[root계정 암호에 대한 ](https://aws.amazon.com/ko/premiumsupport/knowledge-center/set-change-root-linux/)**   
+[root계정 암호에 대한 참고](https://aws.amazon.com/ko/premiumsupport/knowledge-center/set-change-root-linux/)**   
