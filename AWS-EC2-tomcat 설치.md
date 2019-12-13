@@ -19,11 +19,11 @@
 
 
 ### 3. tomcat을 설치한다.
-> tomcat을 설치하는 방법에는 배포판을 통해 받을 수 있는 tomcat8과      
+> tomcat을 설치하는 방법에는 apt 또는 apt-get을 통해 받을 수 있는 tomcat8과      
 > 직접 [tomcat](https://tomcat.apache.org/)에 접속하여 다운로드 uri를 통하여 wget하는 방법이 있다.   
 > 두개의 설치 방법에 따라 구동방법과 저장되는 경로가 다르다.
 > 
-> (1) ```=> sudo apt-get install tomcat8``` 로 설치하게 될 경우 /usr/share/tomcat8에 설치된다.
+> (1) apt-get으로 설치하게 될 경우 /usr/share/tomcat8경로에 설치된다.     
 > 설치 : ```=> sudo apt-get install tomcat8```  
 > 버전확인 : ```=> sudo /usr/share/tomcat8/bin/version.sh```    
 > 방화벽 설정 : **AWS 인스턴스일 경우 보안 그룹 >> 인바운드 >> 규칙에서 tomcat포트 설정**    
