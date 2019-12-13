@@ -29,7 +29,7 @@
 ``` => sudo netstat -atlpvn ```
 
 #### 10. apach2. 추가 보안설정  
-``` => sudo nano /etc/apache2/apache2.conf ```     
+> ``` => sudo nano /etc/apache2/apache2.conf ```     
 >
 > ![apache2 conf](https://user-images.githubusercontent.com/28284285/70769399-b2d36400-1dac-11ea-9ab5-ae1022acfd7d.PNG)      
 > 아래에 추가로 작성      
@@ -62,7 +62,7 @@
 >
 
 #### 11. 인코딩 설정   
-``` => sudo nano /etc/apache2/conf-available/charset.conf ```   
+> ``` => sudo nano /etc/apache2/conf-available/charset.conf ```   
 > AddDefaultCharset UTF-8 주석해제    
 >     
 > ![인코딩설정](https://user-images.githubusercontent.com/28284285/70769400-b36bfa80-1dac-11ea-8a38-4af2ed4d45cc.PNG)    
@@ -87,7 +87,7 @@
 >
 
 #### 13. apache 재시작   
-``` => sudo service apache2 reload ``` 
+> ``` => sudo service apache2 reload ``` 
 
 **[apache설치 참고](https://blog.lael.be/post/73)**      
 
