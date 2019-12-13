@@ -19,7 +19,7 @@
 >> 별도의 모듈 설치가 필요없고(apache 기본모듈) 설정이 간편하고 특정 WAS에 의존적이지 않다.    
 >> 단점으로는 URL별 유연한 설정이 어렵다.(ProxyPassMatch 사용필요)      
 >   
->> 3. mod_proxy_ajp 방식     
+> 3. mod_proxy_ajp 방식     
 >> 2번 방식과 동일
 >  
 **[자세한 내용 참고](https://www.lesstif.com/pages/viewpage.action?pageId=12943367)**     
@@ -34,15 +34,15 @@
 > 
 > ```=> sudo nano /etc/apache2/workers.properties```   
 >   
-> ```*workers.tomcat_home=톰캣경로*```      
-> ```*workers.java_home=자바경로*````    
+> ```workers.tomcat_home=톰캣경로```      
+> ```workers.java_home=자바경로````    
 > --------------------------------       
 > **아래와 같이 로드밸런스를 사용할 경우에는 worker.list에 로드밸런서명을 적어야 함**
-> ```*worker.list=워커이름1, 워커이름2*```   
-> ```*worker.ajp13_worker.port=8009*```   
-> ```*worker.ajp13_worker.host=톰캣서버 도메인 or 아이피*```   
-> ```*worker.ajp13_worker.type=ajp13*```    
-> ```*worker.ajp13_worker.lbfactor=1*```
+> ```worker.list=워커이름1, 워커이름2```   
+> ```worker.ajp13_worker.port=8009```   
+> ```worker.ajp13_worker.host=톰캣서버 도메인 or 아이피```   
+> ```worker.ajp13_worker.type=ajp13```    
+> ```worker.ajp13_worker.lbfactor=1```
 > ---------------------------------     
 > ```*worker.loadbalancer.type=1b*```
 > ```*worker.loadbalancer.balance_workers=ajp13_worker*```
