@@ -1,9 +1,9 @@
 ## AWS EC2 Ubuntu 18.04 인스턴스에 설치되어있는 apache에 SSL을 설정한다.
 
-##### SSL 발급 받는 방식에는 여러가지가 있지만 여기서는 무료로 테스트 가능한 SSL을 기술한다.    
-##### 첫번째로 Ubuntu Apache 웹서버의 경우 자동으로 자가서명인증서(Self-Signed SSL)을 생성하고 기본사이트를 구동합니다.    
-##### 두번째는 openSSL을 이용하여 CSR과 private key 를 발급 받는다.   
-##### 세번째는 letsEncrypt를 이용하여 무료 인증서를 발급받는 방식이다.    
+> SSL 발급 받는 방식에는 여러가지가 있지만 여기서는 무료로 테스트 가능한 SSL을 기술한다.    
+> 첫번째로 Ubuntu Apache 웹서버의 경우 자동으로 자가서명인증서(Self-Signed SSL)을 생성하고 기본사이트를 구동합니다.    
+> 두번째는 openSSL을 이용하여 CSR과 private key 를 발급 받는다.   
+> 세번째는 letsEncrypt를 이용하여 무료 인증서를 발급받는 방식이다.    
 
 ### 1. Ubuntu Apache환경일 경우     
 #### (1) 기본으로 생성된 ssl 이용    
