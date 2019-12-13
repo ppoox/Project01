@@ -3,7 +3,7 @@
 ### 1. 해당 인스턴스의 보안 그룹 설정을 통해 SSH(22)포트를 열어준다.   
 > 왼쪽 메뉴 "네트워크 및 보안 >> 보안 그룹"으로 들어가면 보안 그룹 목록이 보인다.   
 > 해당 인스턴스에 적용되어 있는 보안 그룹을 모르겠다면 인스턴스 목록 밑 설명탭으로 확인 할 수 있다.   
-> 보안 그룹을 선택하고 하단의 인바운드를 눌러 편집한다.
+> 보안 그룹을 선택하고 하단의 인바운드를 눌러 편집한다.     
 > 이곳에서 요청에 대하여 어떤 포트를 받아줄건지 형태나 번호를 설정할 수 있고 소스 IP를 설정 할 수 있다. **[참고](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-security-groups.html)**     
 > ![인스턴스 보안그룹](https://user-images.githubusercontent.com/28284285/70761447-9de8d780-1d90-11ea-86e3-e9112b577521.PNG)      
 > 
@@ -27,7 +27,7 @@
 > ![putty세션설정](https://user-images.githubusercontent.com/28284285/70760658-b1467380-1d8d-11ea-985b-89fe1b728b12.PNG)    
 >   
 > 다음으로는 왼쪽 Category에서  "Connection >> SSH >> Auth"를 들어간 후   
-> "Browse.."를 눌러 아까 puttygen을 사용하여 생성한 .ppk 파일을 선택해준다.
+> "Browse.."를 눌러 아까 puttygen을 사용하여 생성한 .ppk 파일을 선택해준다.    
 > 그리고 "Open"을 누르면 인스턴스 접속이 가능하다.      
 > ![putty키설정](https://user-images.githubusercontent.com/28284285/70760660-b1467380-1d8d-11ea-9e61-6191da9d8b6d.PNG)    
 >    
