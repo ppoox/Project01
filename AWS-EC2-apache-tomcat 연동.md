@@ -9,4 +9,36 @@
 > ![connect1](https://user-images.githubusercontent.com/28284285/70771252-c209e000-1db3-11ea-8425-0a0e88889b94.PNG)     
 >   
 
+> apache와 tomcat을 연동하는 방식에는 3가지가 있다.     
+> 1. mod_jk 방식    
+>> mod_jk 방식을 오래 써왔고 많이 사용하기 때문에 관련자료가 많고    
+>> JkMount 옵션을 이용하면 URL이나 컨텐츠별로 유연한 설정이 가능    
+>> 단점으로는 별도의 모듈을 설치해야하며 설정이 어렵다. 그리고 tomcat전용이다.    
+>      
+> 2. mod_proxy 방식   
+>> 별도의 모듈 설치가 필요없고(apache 기본모듈) 설정이 간편하고 특정 WAS에 의존적이지 않다.    
+>> 단점으로는 URL별 유연한 설정이 어렵다.(ProxyPassMatch 사용필요)      
+>   
+>> 3. mod_proxy_ajp 방식     
+>> 2번 방식과 동일
+>  
+**[자세한 내용 참고](https://www.lesstif.com/pages/viewpage.action?pageId=12943367)**     
+
+#### 여기서는 1번 mod_jk 방식을 사용한다.     
+ 
+### 1. 연동 커넥터 mod_jk 설치    
+> ```=> sudo apt-get install libapache2-mod-jk```    
+
+### 2. workers.properties 파일 생성     
+> /etc/apache2/ 경로에 파일을 생성한다.  
+> 
+> ```=> sudo nano /etc/apache2/workers.properties```   
+> 
+> ![workers1](https://user-images.githubusercontent.com/28284285/70771898-22018600-1db6-11ea-80c7-d6f2d61be88d.PNG)      
+>        
+> ![wokers2](https://user-images.githubusercontent.com/28284285/70771899-22018600-1db6-11ea-94f1-6e3eaef4534e.PNG)      
+
+
+
+
 
