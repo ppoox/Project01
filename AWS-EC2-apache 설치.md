@@ -31,13 +31,7 @@
 #### 10. apach2. 추가 보안설정  
 ``` => sudo nano /etc/apache2/apache2.conf ```     
 >
->> AccessFileName .htaccess  
->> 
->> <FileMatch "^\.ht">  
->> 	Requrie all denied  
->> </FileMatch>   
->> 
->
+> ![apache2 conf](https://user-images.githubusercontent.com/28284285/70769399-b2d36400-1dac-11ea-9ab5-ae1022acfd7d.PNG)      
 > 아래에 추가로 작성      
 >
 >> ```
@@ -69,11 +63,13 @@
 
 #### 11. 인코딩 설정   
 ``` => sudo nano /etc/apache2/conf-available/charset.conf ```   
-> 아래의 코드 주석해제
->> AddDefaultCharset UTF-8
+> AddDefaultCharset UTF-8 주석해제      
+> ![인코딩설정](https://user-images.githubusercontent.com/28284285/70769400-b36bfa80-1dac-11ea-8a38-4af2ed4d45cc.PNG)    
+> 
 
 #### 12. security.conf 추가 보안설정    
 > ``` => sudo nano /etc/apache2/conf-available/security.conf ```   
+> ![시큐리티1](https://user-images.githubusercontent.com/28284285/70769397-b2d36400-1dac-11ea-8c63-bade99189be2.PNG)        
 > 아래의 코드들 찾아서 작성, 수정 또는 주석해제
 >
 >> <Directory />
@@ -87,20 +83,9 @@
 >
 >> TraceEnable Off
 >
->> Header set X-Content-Type-Options: "nosniff"
->
->> Header set X-Frame-Options: "sameorgin"
->
 
 #### 13. apache 재시작   
 ``` => sudo service apache2 reload ``` 
 
-* **여기까지 참고 : https://blog.lael.be/post/73**     
+**[apache설치 참고](https://blog.lael.be/post/73)**      
 
-#### 14. apache 서버의 sites 값 수정
-``` => sudo nano /etc/apache2/sites-available/000-default.conf ```
-> serverName '아이피주소 or 도메인 작성'
-
-
-* 추후 추가 작성 할 것 => mod_jk를 이용한 tomcat 연동, SSL 인증서 적용, SSH 기본포트번호 변경, 방화벽 설정, 트랙픽 양 제한
-> JkMount /* loadbalancer				=> tomcat으로 넘겨줄 파일 설정(추후 ssl적용시 default-ssl로 이동)
