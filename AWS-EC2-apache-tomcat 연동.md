@@ -35,7 +35,7 @@
 > ```=> sudo nano /etc/apache2/workers.properties```   
 > 
 >>    
->> workers.tomcat_home=톰캣경로     
+>> ####workers.tomcat_home=톰캣경로     
 >> workers.java_home=자바경로    
 >> --------------------------------       
 >> **아래와 같이 로드밸런스를 사용할 경우에는 worker.list에 로드밸런서명을 적어야 함**
