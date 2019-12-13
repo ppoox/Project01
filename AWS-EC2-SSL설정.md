@@ -30,7 +30,7 @@
 >>    
 >> **common name에는 서버의 도메인 또는 IP를 입력한다.**    
 >> Common Name (e.g. server FQDN or YOUR name) []: 192.168.2.3   
->> Email Address []:dummy@example.com   
+>> Email Address []:text@example.com   
 >>  
 
 #### (3) AWS 인스턴스 보안 그룹에서 인바운드 443번 포트 개방    
