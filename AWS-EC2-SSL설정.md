@@ -52,7 +52,8 @@
 
 **[openSSL 방식 참고](https://hostadvice.com/how-to/configure-apache-with-tls-ssl-certificate-on-ubuntu-18/)**     
 
-
+### 3. letsEncrypt를 이용할 경우    
+**[letsEncrypt 방식 참고](https://blog.lael.be/post/5107)     
 
 
  
