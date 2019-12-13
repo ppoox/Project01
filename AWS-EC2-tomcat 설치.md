@@ -14,13 +14,13 @@
 > ```=> sudo date ```   
 
 ### 2. java를 설치한다.
-> 환경변수 설정까지 잘 설명되어 있는 [링크](https://all-record.tistory.com/181?category=733055)     
+> **[환경변수 설정까지 잘 설명되어 있는 링크](https://all-record.tistory.com/181?category=733055)**     
 > 
 
 
 ### 3. tomcat을 설치한다.
 > tomcat을 설치하는 방법에는 apt 또는 apt-get을 통해 받을 수 있는 tomcat8과      
-> 직접 [tomcat](https://tomcat.apache.org/)에 접속하여 다운로드 uri를 통하여 wget하는 방법이 있다.   
+> 직접 **[tomcat](https://tomcat.apache.org/)** 에 접속하여 다운로드 uri를 통하여 wget하는 방법이 있다.   
 > 두개의 설치 방법에 따라 구동방법과 저장되는 경로가 다르다.
 > 
 > #### (1) apt-get으로 설치하게 될 경우 /usr/share/tomcat8경로에 설치된다.     
@@ -52,7 +52,7 @@
 > 
 > *설치*    
 > ```=> sudo wget 원하는 버전 톰캣의 다운로드 링크```     
-> **[톰캣 다운로드](http://tomcat.apache.org/)** 가서 "tar.gz" 링크 우클릭 >> 링크주소 복사하여 다운로드 링크 획득 가능    
+> **[tomcat](https://tomcat.apache.org/)** 가서 "tar.gz" 링크 우클릭 >> 링크주소 복사하여 다운로드 링크 획득 가능    
 > 
 > *방화벽 설정*
 > ```=> 위와 동일```   
