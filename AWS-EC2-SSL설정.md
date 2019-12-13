@@ -4,16 +4,17 @@
 > 첫번째로 Ubuntu Apache 웹서버의 경우 자동으로 자가서명인증서(Self-Signed SSL)을 생성하고 기본사이트를 구동합니다.    
 > 두번째는 openSSL을 이용하여 CSR과 private key 를 발급 받는다.   
 > 세번째는 letsEncrypt를 이용하여 무료 인증서를 발급받는 방식이다.    
+<br>
 
 ### 1. Ubuntu Apache환경일 경우     
-#### (1) 기본으로 생성된 ssl 이용    
-```=> sudo a2ensite default-ssl```       
-
-#### (2) apache 재시작    
-```=> sudo service apache2 reload```    
-
+> #### (1) 기본으로 생성된 ssl 이용    
+> ```=> sudo a2ensite default-ssl```       
+> 
+> #### (2) apache 재시작    
+> ```=> sudo service apache2 reload```    
+> 
 **[ubuntu 기본 SSL 방식 참고](https://blog.lael.be/post/7147)**     
-     
+<br>      
     
 ### 2. openSSL을 이용할 경우    
 #### (1) 인증파일을 저장할 directory를 생성/이동    
@@ -51,9 +52,10 @@
 >  
 
 **[openSSL 방식 참고](https://hostadvice.com/how-to/configure-apache-with-tls-ssl-certificate-on-ubuntu-18/)**     
+<br>   
 
 ### 3. letsEncrypt를 이용할 경우    
-**[letsEncrypt 방식 참고](https://blog.lael.be/post/5107)     
+> **[letsEncrypt 방식 참고](https://blog.lael.be/post/5107)     
 
 
  
