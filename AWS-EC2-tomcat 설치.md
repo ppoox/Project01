@@ -2,7 +2,7 @@
 
 ### 1. 인스턴스 최신화 및 시간  설정
 > #### (1) 배포판 pacakage store에서 update 목록을 확인한다.    
-> ```bash => sudo apt-get update```    
+> ```=> sudo apt-get update```    
 > 
 > #### (2) pacakage 최신화   
 > ```=> sudo apt-get upgrade```    
