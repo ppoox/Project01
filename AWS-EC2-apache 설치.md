@@ -63,12 +63,14 @@
 
 #### 11. 인코딩 설정   
 ``` => sudo nano /etc/apache2/conf-available/charset.conf ```   
-> AddDefaultCharset UTF-8 주석해제      
+> AddDefaultCharset UTF-8 주석해제    
+>     
 > ![인코딩설정](https://user-images.githubusercontent.com/28284285/70769400-b36bfa80-1dac-11ea-8a38-4af2ed4d45cc.PNG)    
 > 
 
 #### 12. security.conf 추가 보안설정    
-> ``` => sudo nano /etc/apache2/conf-available/security.conf ```   
+> ``` => sudo nano /etc/apache2/conf-available/security.conf ```     
+>     
 > ![시큐리티1](https://user-images.githubusercontent.com/28284285/70769397-b2d36400-1dac-11ea-8c63-bade99189be2.PNG)        
 > 아래의 코드들 찾아서 작성, 수정 또는 주석해제
 >
