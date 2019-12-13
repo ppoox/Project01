@@ -73,8 +73,23 @@
 >
 
 ### JkMount를 이용해 어떤 리소스는 apache에서 처리할지, 어떤 리소스는 tomcat으로 넘겨줄지를 설정할 수 있다.   
-### JkMount /* worker명 또는 로드밸런스명   =>   모든 리소스를 worker(tomcat)에게 넘기겠다는 의미    
-### 무엇을 넘길지는상황에 따라 적용시킨다.   
+> **JkMount /* worker명 또는 로드밸런스명**   =>   모든 리소스를 worker(tomcat)에게 넘기겠다는 의미    
+> 무엇을 넘길지는상황에 따라 적용시킨다.   
+
+
+### 5. tomcat server.xml 설정 변경    
+> tomcat설치 하위의 conf 디렉토리로 이동한다.
+> ```=> sudo su```    
+> ```=> nano server.xml```    
+> 주석해제   
+>     
+> ![serverxml](https://user-images.githubusercontent.com/28284285/70773205-24fe7580-1dba-11ea-979d-fe3e5afe053d.PNG)      
+>   
+>   
+
+
+
+
 
 
 
