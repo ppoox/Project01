@@ -48,9 +48,9 @@
 > 
 > **[apt-get 이용할시 참고](https://all-record.tistory.com/182)**     
 > 
-> 
-> ***
-> 
+>       
+> ***      
+>       
 > 
 > #### (2)wget으로 설치하게 될 경우 tomcat을 설치할 directory에 가서 명령어를 실행해야한다.    
 > 
@@ -70,5 +70,7 @@
 > ```=> ./startup.sh```     
 > 
 > *중지*    
-> ```=> ./shutdown.sh```
->
+> ```=> ./shutdown.sh```    
+>     
+>     
+  
