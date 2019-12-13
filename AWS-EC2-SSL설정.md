@@ -12,7 +12,7 @@
 #### (2) apache 재시작    
 ```=> sudo service apache2 reload```    
 
-**[1번 방식 참고](https://blog.lael.be/post/7147)**     
+**[ubuntu 기본 SSL 방식 참고](https://blog.lael.be/post/7147)**     
      
     
 ### 2. openSSL을 이용할 경우    
@@ -49,6 +49,8 @@
 > **serverName**과 http로 요청이 오면 https로 리다이렉트 해주는 **Redirect permanent**를 설정해준다.    
 > ![000defaultconf](https://user-images.githubusercontent.com/28284285/70770175-b7e5e280-1daf-11ea-9ee3-6f93974051bb.PNG)    
 >  
+
+**[openSSL 방식 참고](https://hostadvice.com/how-to/configure-apache-with-tls-ssl-certificate-on-ubuntu-18/)**     
 
 
 
