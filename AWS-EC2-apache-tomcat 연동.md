@@ -37,7 +37,7 @@
 >>    
 >> workers.tomcat_home=톰캣경로       
 >> workers.java_home=자바경로      
->> **아래와 같이 로드밸런스를 사용할 경우에는 worker.list에 로드밸런서명을 적어야 함**      
+>> **아래와 같이 로드밸런스를 사용할 경우에는 worker.list에 로드밸런서명을 적어야한다**      
 >> worker.list=워커이름1, 워커이름2   
 >> worker.ajp13_worker.port=8009   
 >> worker.ajp13_worker.host=톰캣서버 도메인 or 아이피   
@@ -50,6 +50,31 @@
 > ![workers1](https://user-images.githubusercontent.com/28284285/70771898-22018600-1db6-11ea-80c7-d6f2d61be88d.PNG)      
 >        
 > ![wokers2](https://user-images.githubusercontent.com/28284285/70771899-22018600-1db6-11ea-94f1-6e3eaef4534e.PNG)      
+
+### 3. jk.conf에 workers.properties 파일 경로 수정    
+> ```=> sudo nano /etc/apache2/mods-available/jk.conf```    
+> **JkWorkersFile 경로 수정**    
+>    
+> ![jkconf](https://user-images.githubusercontent.com/28284285/70772557-3e062700-1db8-11ea-9b13-6af2c0446ab2.PNG)    
+>    
+
+### 4. VirtualHost 설정 변경    
+> #### (1) SSL 설정이 되어있지 않은 경우에는 000-default.conf에 JkMount 설정 추가    
+>> ```=> sudo nano /etc/apache2/sites-available/000-default.conf```   
+>>    
+>> ![000jkmount](https://user-images.githubusercontent.com/28284285/70772781-f6cc6600-1db8-11ea-8026-1af26fd69fbd.PNG)    
+>>
+>    
+> #### (2) SSL이 설정되어 있는 경우에는 SSL VirtualHost설정파일에 JkMount 설정 추가     
+>> ```=>sudo nano /etc/apache2/sites-available/default-ssl.conf```   
+>> 
+>> ![jkdefaultssl](https://user-images.githubusercontent.com/28284285/70772782-f6cc6600-1db8-11ea-9132-7319cc923633.PNG)    
+>   
+>
+
+### JkMount를 이용해 어떤 리소스는 apache에서 처리할지, 어떤 리소스는 tomcat으로 넘겨줄지를 설정할 수 있다.   
+### JkMount /* worker명 또는 로드밸런스명   =>   모든 리소스를 worker(tomcat)에게 넘기겠다는 의미    
+### 무엇을 넘길지는상황에 따라 적용시킨다.   
 
 
 
