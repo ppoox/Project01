@@ -2,7 +2,7 @@
 
 ### 1. 인스턴스 최신화 및 시간  설정
 > #### (1) 배포판 pacakage store에서 update 목록을 확인한다.    
-> ```=> sudo apt-get update```    
+> ```bash => sudo apt-get update```    
 > 
 > #### (2) pacakage 최신화   
 > ```=> sudo apt-get upgrade```    
@@ -48,6 +48,7 @@
 > 
 > **[apt-get 이용할시 참고](https://all-record.tistory.com/182)**     
 > 
+> <br>
 > ***
 > 
 > #### (2)wget으로 설치하게 될 경우 tomcat을 설치할 directory에 가서 명령어를 실행해야한다.    
