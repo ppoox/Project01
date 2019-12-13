@@ -46,12 +46,13 @@
 > *중지*   
 > ```=> sudo service tomcat8 stop```    
 > 
-> **[참고](https://all-record.tistory.com/182)**     
+> **[apt-get 이용할시 참고](https://all-record.tistory.com/182)**     
 > 
 > (2)wget으로 설치하게 될 경우 tomcat을 설치할 directory에 가서 명령어를 실행해야한다.    
 > 
-> 설치 : ```=> sudo wget 원하는 버전 톰캣의 다운로드 링크```     
-> **[톰캣](http://tomcat.apache.org/)** 가서 "tar.gz" 링크 우클릭 >> 링크주소 복사하여 다운로드 링크 획득 가능    
+> *설치*    
+> ```=> sudo wget 원하는 버전 톰캣의 다운로드 링크```     
+> **[톰캣 다운로드](http://tomcat.apache.org/)** 가서 "tar.gz" 링크 우클릭 >> 링크주소 복사하여 다운로드 링크 획득 가능    
 > 
 > 
 >
