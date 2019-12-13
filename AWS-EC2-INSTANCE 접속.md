@@ -14,7 +14,8 @@
 
 3. puttygen을 실행시키고 load를 눌러 인스턴스를 생성할 당시 받은 .pem의 키페어 파일을 선택한다.  
 > .pem형식의 파일이 보이지 않으면 우측 하단에서 "All Files"를 선택후 찾는다.   
-> 선택후 "Generate"를 누르면 프로그레스 바가 보이고, 끝나고 "Save private key"를 누르면 .ppk파일이 다운받아진다.   
+> 선택 후 "Generate"를 눌러서 프로그레스 바가 끝나고 "Save private key"를 누르면 알림창이 하나 뜬다.   
+> "Key passpharse"설정에 대한 물음인데, 키 페어에 대한 암호로 이중으로 암호를 거는셈이다. 없으면 Yes!   
 > ![puttygen](https://user-images.githubusercontent.com/28284285/70760657-b1467380-1d8d-11ea-8a86-ec189f3059d0.PNG)   
 > 
 
@@ -34,9 +35,3 @@
 
 **AWS EC2 INSTANCE에서는 보안상 root에 암호를 사용하지 않기권장하기 때문에 권한만 빌려 사용하시거나     
 임시 root 비밀번호 발급받아 사용하셔야 합니다. [참고](https://aws.amazon.com/ko/premiumsupport/knowledge-center/set-change-root-linux/)**   
-
-
- 
-
-
-
