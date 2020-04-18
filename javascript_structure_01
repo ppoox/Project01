@@ -1,0 +1,62 @@
+
+(function() {
+	// ppoox는 약칭
+	if(!window.ppoox){
+		window.ppoox = {};
+	}
+
+	window.ppoox.object = {};
+
+	const _object = window.ppoox.object;
+
+    /**
+	 * 기본 셋팅에 추가로 새로운 셋팅을 더한다.
+	 * see - http://stackoverflow.com/questions/5484673/javascript-how-to-dynamically-create-nested-objects-using-object-names-given-by
+     */
+	_object.createNestedObject = function(base, items){
+    	items = items.split('.');
+
+        $.each(items, function(i, v){
+            base = base[v] = (base[v] || {});
+        });
+
+        return base;
+    };
+
+	const _example = abc.object.createNestedObject(window,'ppoox.test');
+	
+	let _globalVariable1 = '';
+	let _globalVariable2 = false;
+	
+	_example.init = function() {
+		_example.events();
+		_example.initData();
+		_example.validation();
+	}
+	
+	_example.func1 = function() {
+		console.log('This is func1');
+	}
+
+	_example.func2 = function () {
+		console.log('This is func2');
+	}
+
+	_example.validation = function () {
+
+	}
+	
+	_example.events = function() {
+		$('#exampleEle').off().on('click', function() {
+			// js inner
+			_example.func1();
+			// js outer
+			ppoox.test.func2();
+		});
+	}
+
+	$(function() {
+		_example.init();
+	});
+})();
+
