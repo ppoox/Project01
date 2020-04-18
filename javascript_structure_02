@@ -1,0 +1,62 @@
+
+const obj = {
+	init: function() {
+		this.bind();
+		this.func.initData();
+	},
+	bind: function() {
+		// event handler
+		$('#exampleEle1').off.on('click', function() {
+			obj.func.func1();
+		});
+		$('#exampleEle2').off.on('click', function() {
+			obj.func.func2();
+		});
+	},
+	func: {
+		initData: function() {
+			// data setting
+			$.ajax({
+	            url: '',
+	            type: '',
+	            success:function(data){
+		            
+	            },
+	            fail:function(e) {
+	            }
+			});
+		},
+		func1: function() {
+			console.log('This is func1');
+		},
+		func2: function() {
+			console.log('This is func2');
+		},
+		commonAjax: function() {
+    
+			$.ajax({
+	            url: _url,
+	            type: '',
+	            data: dataObj,
+	            async: false,
+	            success:function(data){
+		            
+	            },
+	            fail:function(e) {
+		            
+	            }
+			});
+		},
+	},
+	globalObject: {
+		noData: [],
+		var1: '',
+		var2 : '',
+		var3 : true
+	},
+	globalVariable: ''
+}
+
+$(document).ready(function() {
+	obj.init();
+});
