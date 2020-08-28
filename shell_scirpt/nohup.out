@@ -1,0 +1,79 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.8.1
+ 
+20200824 06:21:46 [SCOUTER] Version 2.8.1 2020-05-14 23:36 GMT_ENV_java8plus
+20200824 06:21:46 [SCOUTER] loaded by system classloader 
+20200824 06:21:46 [SCOUTER] jar:file:/home/ubuntu/scouter/scouter/agent.java/scouter.agent.jar
+20200824 06:21:46 [SCOUTER] objType:java
+20200824 06:21:46 [SCOUTER] objName:/ip-172-26-4-7/apisample
+20200824 06:21:46 [A113] Counter Collector Started (#19)
+20200824 06:21:46 [A113] InteractionCounter Collector Started (#19)
+20200824 06:21:46 [SCOUTER] Configure -Dscouter.config=/home/ubuntu/scouter/scouter/agent.java/conf/scouter.conf
+20200824 06:21:46 [A100] agent boot seed=x1qu4fi2fvh
+20200824 06:21:46 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractAppService service.plug loaded #xv4j88s
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractHttpService httpservice.plug loaded #xcleigj
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractCapture capture.plug loaded #xb70s3k
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractCapture springControllerCapture.plug loaded #xr0ptuf
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractJdbcPool jdbcpool.plug loaded #x1a3o49m
+20200824 06:21:47 [NONE] LoadJarBytes scouter.jdbc 33156 bytes
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractHttpCall httpcall.plug loaded #x1oh7308
+20200824 06:21:47 [SCOUTER] PLUG-IN : scouter.agent.plugin.AbstractCounter counter.plug loaded #x1sdhk54
+20200824 06:21:47 [A119] Agent UDP local.port=0
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-08-24 06:21:48.672  INFO 15237 --- [           main] n.n.apisample.ApisampleApplication       : Starting ApisampleApplication v0.0.1-SNAPSHOT on ip-172-26-4-7 with PID 15237 (/home/ubuntu/apps/apisample.jar started by ubuntu in /home/ubuntu/project/app_scripts)
+2020-08-24 06:21:48.678  INFO 15237 --- [           main] n.n.apisample.ApisampleApplication       : No active profile set, falling back to default profiles: default
+20200824 06:21:48 [A103] HTTP javax/servlet/http/HttpServlet
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /<GET>
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /api/book/getBooks<GET>
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /api/book/getBook<GET>
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /api/book/modify<PUT>
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /api/book/insert<POST>
+20200824 06:21:49 [SCOUTER] [Apply Spring F/W REST URL] /api/book/delete<DELETE>
+2020-08-24 06:21:50.296  INFO 15237 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-24 06:21:50.382  INFO 15237 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 1 JPA repository interfaces.
+2020-08-24 06:21:51.281  INFO 15237 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8110 (http)
+2020-08-24 06:21:51.300  INFO 15237 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 06:21:51.300  INFO 15237 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-24 06:21:51.587  INFO 15237 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 06:21:51.587  INFO 15237 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2844 ms
+2020-08-24 06:21:52.110  INFO 15237 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 06:21:52.386  INFO 15237 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-24 06:21:52.901  WARN 15237 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-08-24 06:21:53.343  INFO 15237 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-24 06:21:53.610  INFO 15237 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-24 06:21:53.997  INFO 15237 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20200824 06:21:54 [A107] jdbc rs found: org/mariadb/jdbc/internal/com/read/resultset/SelectResultSet
+20200824 06:21:54 [A107] jdbc rs found: org/mariadb/jdbc/internal/com/read/resultset/UpdatableResultSet
+20200824 06:21:54 [A108] jdbc stmt found: org/mariadb/jdbc/MariaDbStatement
+2020-08-24 06:21:54.163  INFO 15237 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 06:21:54.265  INFO 15237 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2020-08-24 06:21:55.439  INFO 15237 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-24 06:21:55.454  INFO 15237 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 06:21:55.541  INFO 15237 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2020-08-24 06:21:55.606  INFO 15237 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8110 (http) with context path ''
+2020-08-24 06:21:55.611  INFO 15237 --- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-24 06:21:55.918  INFO 15237 --- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-24 06:21:55.932  INFO 15237 --- [           main] n.n.apisample.ApisampleApplication       : Started ApisampleApplication in 8.529 seconds (JVM running for 15.187)
+2020-08-24 06:22:47.611  INFO 15237 --- [nio-8110-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-24 06:22:47.613  INFO 15237 --- [nio-8110-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-24 06:22:47.627  INFO 15237 --- [nio-8110-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+20200824 06:22:47 [NONE] LoadJarBytes scouter.http 14240 bytes
+Hibernate: select book0_.id as id1_0_, book0_.auth as auth2_0_, book0_.date as date3_0_, book0_.image_url as image_ur4_0_, book0_.name as name5_0_, book0_.price as price6_0_, book0_.publisher as publishe7_0_ from book book0_
+20200824 06:22:47 [A106] jdbc pstmt found: org/mariadb/jdbc/ClientSidePreparedStatement
+2020-08-24 06:42:04.021  INFO 15237 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 06:42:04.028  INFO 15237 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-24 06:42:04.028  INFO 15237 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-24 06:42:04.036  INFO 15237 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
